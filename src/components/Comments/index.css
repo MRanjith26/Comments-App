@@ -1,0 +1,131 @@
+/* Write your CSS here */
+.bg-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 32px;
+  color: #1e293b;
+  padding-bottom: 15px;
+}
+.Details-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cbd2d9;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px;
+}
+.form-image {
+  width: 80%;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 45px;
+  color: #1e293b;
+}
+.context {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #475569;
+  font-weight: 500;
+}
+.input {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #000000;
+  border: 1px solid #cbd2d9;
+  border-radius: 5px;
+  height: 35px;
+  padding: 10px;
+  outline: none;
+  font-weight: 400;
+}
+.comment-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #cbd2d9;
+  border-radius: 5px;
+  padding: 7px;
+  outline: none;
+}
+.button {
+  align-self: flex-start;
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #0284c7;
+  padding: 7px 9px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.total-comments {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.total {
+  background-color: #0284c7;
+  color: #ffffff;
+  padding: 3px 7px 3px 7px;
+  border-radius: 5px;
+}
+.brief {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #475569;
+}
+.comment-container {
+  width: 770px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 576px) {
+  .Details-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .title {
+    text-align: center;
+    font-size: 26px;
+  }
+  .image-container {
+    order: 1;
+  }
+  .form-container {
+    order: 2;
+  }
+  .form-image {
+    width: 60%;
+  }
+  .total-comments {
+    margin-left: 20px;
+  }
+  .comment-container {
+    margin: 20px;
+    max-width: 370px;
+  }
+}
